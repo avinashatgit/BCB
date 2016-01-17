@@ -59,10 +59,12 @@ public class TestBase {
 	@AfterTest
 	public void tearDownTest()
 	{
+		BasePage.closeDriver();
 	}
 	
 	@AfterSuite
 	public void tearDownTestSuite(){
+		BasePage.quitDriver();
 	}
 	
 	@DataProvider

@@ -61,9 +61,9 @@ public class BasePage {
 	
 	
 	public static void initSauceLabBrowser() throws MalformedURLException{
-		DesiredCapabilities caps = DesiredCapabilities.firefox();
+		DesiredCapabilities caps = DesiredCapabilities.chrome();
 		caps.setCapability("platform", "Windows 7");
-		caps.setCapability("version", "38.0");
+		caps.setCapability("version", "47.0");
 		
 		
 		driver = new RemoteWebDriver(new URL(URL), caps);
@@ -129,6 +129,18 @@ public class BasePage {
 			 Reporter.log("entered "+ value +" on " + elementIdentifier + " by locator " + locator );
 			 throw new Exception( "unable to find element ");
 		}
+		
+	}
+
+
+	public static void closeDriver() {
+		driver.close();
+		
+	}
+
+
+	public static void quitDriver() {
+		driver.quit();
 		
 	}
 
