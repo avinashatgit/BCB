@@ -24,7 +24,6 @@ public class TestBase {
 	
 
 	protected String baseUrl = "";
-	  
 	
 
 	//String browser
@@ -39,12 +38,17 @@ public class TestBase {
 	@Parameters({"browser"})
 	public void setupTest(String browser) throws MalformedURLException{
 		
+		
+		
 		//setup driver instance
+		
+		BasePage.initSauceLabBrowser();
+		
+		
 //		BasePage.initBrowser(browser);
 		
-		BasePage.initLocalBrowser(browser);
+		//BasePage.initLocalBrowser(browser);
 		
-//		BasePage.initLocalBrowser("Chrome");
 		
 		
 		//launch application

@@ -25,6 +25,11 @@ public class BasePage {
 	//private int timeOutInSeconds = 30;
 	protected static WebDriver driver;
 	
+	public static final String USERNAME = "avinashatgit";
+	public static final String ACCESS_KEY = "7dce5e9a-1776-4810-9277-3b60b1a0b5de";
+	public static final String URL = "http://" + USERNAME + ":" + ACCESS_KEY + "@ondemand.saucelabs.com:80/wd/hub";
+	  
+	
 	
 	public static void initBrowser(String param) throws MalformedURLException{
 		
@@ -54,6 +59,15 @@ public class BasePage {
 		driver.manage().window().maximize();
 	}
 	
+	
+	public static void initSauceLabBrowser() throws MalformedURLException{
+		DesiredCapabilities caps = DesiredCapabilities.firefox();
+		caps.setCapability("platform", "Windows 7");
+		caps.setCapability("version", "38.0");
+		
+		
+		driver = new RemoteWebDriver(new URL(URL), caps);
+	}
 	
 	public static void initLocalBrowser(String param) throws MalformedURLException{
 		
