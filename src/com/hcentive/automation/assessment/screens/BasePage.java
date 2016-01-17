@@ -18,6 +18,8 @@ import org.testng.Reporter;
 import com.hcentive.automation.commonutils.GenericUtils;
 import com.hcentive.automation.commonutils.WaitUtils;
 
+import io.github.bonigarcia.wdm.ChromeDriverManager;
+
 public class BasePage {
 	
 	//private int timeOutInSeconds = 30;
@@ -61,8 +63,9 @@ public class BasePage {
 		if (param.equalsIgnoreCase("chrome"))
 		{		
 		// Optional, if not specified, WebDriver will search your path for chromedriver.
-		  System.setProperty("webdriver.chrome.driver", "C:/Users/test3/Desktop/jars/chromedriver.exe");
-		  driver = new ChromeDriver();
+		  System.setProperty("webdriver.chrome.driver", "drivers/chromedriver_win32/chromedriver.exe");
+
+			driver = new ChromeDriver();
 		}
 		else if(param.equalsIgnoreCase("firefox")){
 			

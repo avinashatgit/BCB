@@ -1,4 +1,5 @@
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
     <entry key="appURL">http://www.bcbsm.com</entry>
+    <entry key="appURLA">http://www.bcbsm.com</entry>
 </properties>

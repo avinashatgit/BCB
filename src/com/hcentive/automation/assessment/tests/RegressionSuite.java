@@ -1,14 +1,11 @@
 package com.hcentive.automation.assessment.tests;
 
 import org.testng.annotations.Test;
-import java.util.ArrayList;
-import java.util.HashMap;
-
-import org.apache.log4j.Logger;
-import org.testng.annotations.Test;
+import org.testng.log4testng.Logger;
 
 import com.hcentive.automation.assessment.screens.ScrBcbGetAQuote;
 import com.hcentive.automation.assessment.screens.ScrBcbHomePage;
+import com.hcentive.automation.assessment.tests.TestBase;
 
 public class RegressionSuite extends TestBase{
 	
