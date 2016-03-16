@@ -41,13 +41,10 @@ public class TestBase {
 		
 		
 		//setup driver instance
-		
-		BasePage.initSauceLabBrowser();
-		
-		
-//		BasePage.initBrowser(browser);
-		
-		//BasePage.initLocalBrowser(browser);
+		//BasePage.initSauceLabBrowser();
+		//BasePage.initBrowser(browser);
+
+		BasePage.initLocalBrowser(browser);
 		
 		
 		

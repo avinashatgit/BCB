@@ -13,7 +13,6 @@ public class ObjBcbGetAQuote {
 	
 	private By lnkNext	= By.cssSelector("a.buttonNext");
 	
-	
 	private By rdoYear	= By.cssSelector("input#PlanYearSelection_planYearTypeInsurancePlan2016");
 	
 	private By edtZip	= By.cssSelector("#popzipcode");

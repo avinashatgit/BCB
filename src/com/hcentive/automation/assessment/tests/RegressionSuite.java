@@ -32,7 +32,7 @@ public class RegressionSuite extends TestBase{
 		//click get a quote
 		getQuote.clickGetAQuote();
 		
-		getQuote.selectYear("2016");
+		//getQuote.selectYear("2016");
 		
 		getQuote.enterAdditionalInfolrmation("49749","No","No","12121985", "M", "N");
 		

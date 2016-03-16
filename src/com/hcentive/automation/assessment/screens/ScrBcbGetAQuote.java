@@ -46,14 +46,17 @@ public class ScrBcbGetAQuote extends BasePage {
 	}
 
 	public void switchToNewTab() {
+		
 		try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
 		ArrayList<String> tabs2 = new ArrayList<String> (driver.getWindowHandles());
-		driver.switchTo().window(tabs2.get(0));
+		//driver.switchTo().window(tabs2.get(0));
+		
 		System.out.println("Switched to Window" + driver.getTitle());
 		driver.switchTo().window(tabs2.get(1));
 	}
