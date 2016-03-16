@@ -55,8 +55,6 @@ public class ObjBcbGetAQuote {
 
 
 
-
-
 	public By getRdoYear() {
 		return rdoYear;
 	}

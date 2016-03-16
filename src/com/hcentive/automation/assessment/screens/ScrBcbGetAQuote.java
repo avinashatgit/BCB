@@ -31,7 +31,6 @@ public class ScrBcbGetAQuote extends BasePage {
 		
 		if (feedbackPopup != null)
 		{
-
 			
 			driver.findElement(By.cssSelector("a.fsrCloseBtn")).click();
 			

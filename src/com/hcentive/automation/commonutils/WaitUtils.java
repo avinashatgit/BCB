@@ -49,7 +49,7 @@ public class WaitUtils {
 			driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS); //nullify implicitlyWait() 
 			
 			WebDriverWait wait = new WebDriverWait(driver, timeOutInSeconds); 
-			element = wait.until(ExpectedConditions.presenceOfElementLocated(by));
+			element = wait.until(ExpectedConditions .presenceOfElementLocated(by));
 			
 			driver.manage().timeouts().implicitlyWait(DEFAULT_WAIT_4_PAGE, TimeUnit.SECONDS); //reset implicitlyWait
 			return element; //return the element

@@ -13,18 +13,23 @@ public class RegressionSuite extends TestBase{
 
 	
 	@Test(description = "Enter the names, and verify that they are appearing correctly )")
-	
 	public void AutTC01() throws Exception{
 		
 		logger.debug("This is debug : " );
 		
+		//login to bcb home page		
 		ScrBcbHomePage bcbHome = new ScrBcbHomePage();
+		
+		//click on get Quote
 		ScrBcbGetAQuote getQuote = bcbHome.clickGetQuotes();
 		
+		//click no
 		getQuote.clickNo();
 
+		//click to tab
 		getQuote.switchToNewTab();
 		
+		//click get a quote
 		getQuote.clickGetAQuote();
 		
 		getQuote.selectYear("2016");

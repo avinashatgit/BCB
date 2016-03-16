@@ -8,11 +8,11 @@ import com.hcentive.automation.assessment.screenobjects.ObjBcbHomePage;
 import com.hcentive.automation.commonutils.WaitUtils;
 
 public class ScrBcbHomePage extends BasePage {
+	
 	ObjBcbHomePage scrBcbHomePage = new ObjBcbHomePage();
 
 	public ScrBcbHomePage() {
 		super();
-
 	}
 
 	public ScrBcbGetAQuote clickGetQuotes() {

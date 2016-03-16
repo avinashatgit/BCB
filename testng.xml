@@ -8,6 +8,8 @@
     </classes>
   </test> Test
    -->
+   
+   
   <test name="Test on chrome">
   <parameter name="browser" value="chrome"></parameter>
     <classes>

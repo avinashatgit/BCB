@@ -4,9 +4,9 @@ import org.openqa.selenium.By;
 
 public class ObjBcbHomePage {
 	
-	private By lnkGetQuote=By.xpath("//*[@id='contentNav']//a[text()=' Get a Quote']");
+	private By lnkGetQuote=By.xpath("//*[@id='contentNav']//a[text()=' Get a Quote']" );
 
-	public  By getLnkGetQuote() {
+	public  By getLnkGetQuote( ) {
 		return lnkGetQuote;
 	}
 
